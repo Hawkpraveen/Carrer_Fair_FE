@@ -18,7 +18,7 @@ const ProductList = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/products/get-products"
+          "https://carrer-fair-be.onrender.com/api/products/get-products"
         );
         dispatch(setProducts(response.data));
       } catch (error) {
